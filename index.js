@@ -34,21 +34,19 @@ let movies = [
   const carousel = document.querySelector(".caraousel");
   let sliders = [];
   
-  let slideIndex = 0; // to track current slide index.
+  let slideIndex = 0;
   
   const createSlide = () => {
     if (slideIndex >= movies.length) {
       slideIndex = 0;
     }
-  
-    // creating DOM element
+
     let slide = document.createElement("div");
     var imgElement = document.createElement("img");
     let content = document.createElement("div");
     let h1 = document.createElement("h1");
     let p = document.createElement("p");
-  
-    // attaching all elements
+
     imgElement.appendChild(document.createTextNode(""));
     h1.appendChild(document.createTextNode(movies[slideIndex].name));
     p.appendChild(document.createTextNode(movies[slideIndex].des));
@@ -57,12 +55,10 @@ let movies = [
     slide.appendChild(content);
     slide.appendChild(imgElement);
     carousel.appendChild(slide);
-  
-    // setting up image
+
     imgElement.src = movies[slideIndex].image;
     slideIndex++;
-  
-    // setting elements classname
+
     slide.className = "slider";
     content.className = "slide-content";
     h1.className = "movie-title";
