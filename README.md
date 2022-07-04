@@ -1,2 +1,2 @@
-# project-4-Hotstar-clone-
-Created with CodeSandbox
+It is Disney+ Hotstar landing page created using HTML, CSS and JS.
+
